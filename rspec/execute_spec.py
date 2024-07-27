@@ -84,6 +84,7 @@ class ExecuteSpec:
 
         return {
             "shell_cmd": command,
+            "quiet": true,
             "working_dir": self.context.project_root(),
             "env": env,
             "file_regex": r"^rspec ([^ ]*\.rb):(\d+)() # (.+)$",
